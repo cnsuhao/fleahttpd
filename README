@@ -14,7 +14,7 @@ To run:
 Configuration:
 	1. If there's an index.html under wwwroot, it will be 
 	loaded when fleahttpd starts, otherwise a default
-	index.html will be provide. A default 404 page is alo
+	index.html will be provided. A default 404 page is also
 	available.
 	2. Change support_cgi=0 to 1 to turn on CGI support.  
 
