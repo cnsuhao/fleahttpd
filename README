@@ -1,0 +1,20 @@
+Author: Hui Chen <usa.chen[at]gmail[dot]com>
+
+FleaHttpd: A fast Httpd as small as a flea
+Published under GNU Public License version 3
+
+To compile:
+	gcc fleahttpd.c -Wall -O3 -o fleahttpd
+
+To run:
+	./fleahttpd -p port -r wwwroot
+	wwwroot is the root directory of website, example:
+	fleahttpd -p 8080 -r /var/www/
+
+Configuration:
+	1. If there's an index.html under wwwroot, it will be 
+	loaded when fleahttpd starts, otherwise a default
+	index.html will be provide. A default 404 page is alo
+	available.
+	2. Change support_cgi=0 to 1 to turn on CGI support.  
+
